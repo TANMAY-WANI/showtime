@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -8,7 +9,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+              <Navbar />
+        {children}
+        </body>
 
   );
 }
