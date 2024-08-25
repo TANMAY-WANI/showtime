@@ -113,7 +113,9 @@ export const Header = () => {
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 my-2">
         Ready to watch? Enter your details to get going.
       </p>
+      <a href="/sign-up">
       <MagicButton/>
+      </a>
     </div>
   );
 };

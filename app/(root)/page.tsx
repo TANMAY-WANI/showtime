@@ -1,4 +1,5 @@
 import { HeroParallax } from '@/components/ui/hero-parallax'
+import { handleUser } from '@/lib/actions/user.actions'
 import { movies } from '@/lib/data'
 import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
 import { auth } from '@clerk/nextjs/server'
@@ -7,10 +8,6 @@ import React from 'react'
 
 const Home = () => {
   const { userId } = auth()
-
-  if (userId){
-    redirect("/home")
-  }
   return (
     <main className=''>
       <SignedIn>

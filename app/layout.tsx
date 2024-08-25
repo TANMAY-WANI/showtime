@@ -24,8 +24,10 @@ export default function RootLayout({
     }}>
 
     <html lang="en">
+      <body className={`${inter.className} dark min-h-screen min-w-screen`}>
       <Navigation />
-      <body className={`${inter.className} dark min-h-screen min-w-screen`}>{children}</body>
+        {children}
+        </body>
     </html>
     </ClerkProvider>
   );
