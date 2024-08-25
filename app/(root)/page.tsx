@@ -15,7 +15,6 @@ const Home = () => {
         <SignOutButton />
       </SignedIn>
       <SignedOut>
-
       <HeroParallax movies={movies}/>
       </SignedOut>
     </main>
