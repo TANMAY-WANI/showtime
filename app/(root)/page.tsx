@@ -1,3 +1,4 @@
+import Home from '@/components/Home'
 import { HeroParallax } from '@/components/ui/hero-parallax'
 // import { handleUser } from '@/lib/actions/user.actions'
 import { movies } from '@/lib/data'
@@ -7,12 +8,11 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 
-const Home = () => {
+const LandingPage = () => {
   return (
     <main className=''>
       <SignedIn>
-        <h1>Congratulations</h1>
-        <SignOutButton />
+        <Home/>
       </SignedIn>
       <SignedOut>
       <HeroParallax movies={movies}/>
@@ -21,4 +21,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default LandingPage
