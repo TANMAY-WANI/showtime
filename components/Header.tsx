@@ -90,7 +90,7 @@ const Header = ({ user }: HeaderProps) => {
         <FaLocationPin className='w-5 h-5 cursor-pointer' onClick={handleGetLocation} />
       </div>
 
-      <div className='hidden md:flex'>
+      <div className='hidden md:flex w-4'>
       <UserButton />
       </div>
 

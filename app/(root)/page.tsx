@@ -1,10 +1,7 @@
 import Home from '@/components/Home'
 import { HeroParallax } from '@/components/ui/hero-parallax'
-// import { handleUser } from '@/lib/actions/user.actions'
 import { movies } from '@/lib/data'
-import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
-import { auth } from '@clerk/nextjs/server'
-import { redirect } from 'next/navigation'
+import { SignedIn, SignedOut } from '@clerk/nextjs'
 import React from 'react'
 
 

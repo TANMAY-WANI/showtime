@@ -10,4 +10,5 @@ declare interface HeaderProps{
 
 declare interface CardContentProps{
     cast:Array[]
+    id:string
 }
